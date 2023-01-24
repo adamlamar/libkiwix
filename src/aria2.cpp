@@ -86,6 +86,7 @@ Aria2::Aria2():
   callCmd.push_back("--max-concurrent-downloads=42");
   callCmd.push_back("--rpc-max-request-size=6M");
   callCmd.push_back("--file-allocation=none");
+  callCmd.push_back("--split=1");
   std::string launchCmd;
   for (auto &cmd : callCmd) {
       launchCmd.append(cmd).append(" ");
